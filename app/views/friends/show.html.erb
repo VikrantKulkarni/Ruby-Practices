@@ -1,0 +1,19 @@
+
+
+
+
+<div class="card" style="width: 18rem;">
+  
+  <div class="card-body" style="background: lightgray;">
+  
+  <%= render @friend %>
+  
+  <%= link_to "Edit", edit_friend_path(@friend),  class: "btn btn-primary" %> 
+  <%= link_to "Back ", friends_path,  class: "btn btn-primary" %>
+<br/><br/>
+  <%= button_to "Delete", @friend, method: :delete,  class: "btn btn-outline-danger" %>
+  </div>
+</div>
+
+
+

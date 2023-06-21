@@ -1,0 +1,16 @@
+<h1>Editing friend</h1>
+
+<%= render "form", friend: @friend %>
+
+<br>
+
+<div>
+  <%= link_to "Show", @friend, class: "btn btn-secondary btn-sm" %> 
+  <%= link_to "Back ", friends_path , class: "btn btn-dark btn-sm"%>
+  <%= link_to 'Delete', @friend, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "btn btn-outline-danger btn-sm" %>
+
+
+ 
+
+
+</div>
